@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="formPg4.css" />
+
+    <title id="brand">CVV - Dados Profissionais</title>
+  </head>
+
+  <body>
+    <div class="card-space">
+      <form class="card-content needs-validation" id="usuarioForms" method="get">
+        <div class="titulo">
+            <h1>Dados Profissionais</h1>
+        </div>
+
+        <div class="form-group">
+            <label for="enterprise" class="label">*Nome da Empresa</label>
+            <input type="text" class="form-control" id="enterprise" name="enterprise" required>
+            <div class="invalid-feedback">
+                Por favor, informe qual o nome da empresa
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="position" class="label">*Cargo</label>
+            <input type="text" class="form-control" id="position" name="position" required>
+            <div class="invalid-feedback">
+                Por favor, informe qual o seu cargo 
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="startDate" class="label">*Data de ingressão</label>
+                <input type="date" class="form-control" id="startDate" name="startDate" required>
+                <div class="invalid-feedback">
+                    Por favor, informe a sua data de ingressão no curso
+                </div>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="endDate" class="label">*Data de término</label>
+                <input type="date" class="form-control" id="endDate" name="endDate" required>
+                <div class="invalid-feedback">
+                    Por favor, informe a da data de término da experiência
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="description" class="label">*Descrição</label>
+          <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+          <div class="invalid-feedback">
+              Por favor, descreva quais foram suas atividades durante essa experiência	
+          </div>
+        </div>
+
+        <button class="button-icon" type="button" onclick="addExperience()">
+          <img
+            src="../../../Icons/add_FILL0_wght400_GRAD0_opsz24.png"
+            alt="Sinal de soma"
+          />
+        </button>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Experiência</th>
+              <th scope="col">Cargo</th>
+              <th scope="col">Data de início</th>
+              <th scope="col">Data de término</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+
+        <div class="btn-section">
+          <button type="button" class="btn-save" onclick="save()">
+            Próximo
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="formPg4.js"></script>
+  </body>
+</html>

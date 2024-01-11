@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    color: var(--text1);
+    background-color: var(--background);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    width: 60%;
+    height: auto;
+    padding: 2% 10% 0 10%;
+    border-radius: 16px;
+    background: #678aab;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-content {
+    width: 100%;
+  }
+  
+  .btn-section {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .btn-save {
+    margin: 1% 0 2% auto;
+  }

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="formPg5.css" />
+
+    <title id="brand">CVV - Habilidades</title>
+  </head>
+
+  <body onload="start()">
+    <div class="card-space">
+      <form class="card-content needs-validation" id="usuarioForms" method="get">
+        <div class="titulo">
+          <h1>Habilidades</h1>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-11">
+            <select multiple class="form-control" id="skills"></select>
+          </div>
+
+          <div class="input-group-append">
+            <button class="button-icon" type="button" onclick="addSkill()">
+              <img
+                src="../../../Icons/add_FILL0_wght400_GRAD0_opsz24.png"
+                alt="Sinal de soma"
+              />
+            </button>
+          </div>
+        </div>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Habilidade</th>
+              <th scope="col">Descrição</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+
+        <div class="btn-section">
+          <input type="submit" class="btn-save" value="Finalizar">
+        </div>
+      </form>
+    </div>
+
+    <script src="formPg5.js"></script>
+  </body>
+</html>

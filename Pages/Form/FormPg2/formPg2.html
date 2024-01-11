@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="formPg2.css">
+
+    <title id="brand">CVV - Endereço</title>
+</head>
+
+<body>
+    <div class="card-space">
+        <form class="card-content needs-validation" id="usuarioForms" method="get">
+            <div class="titulo">
+                <h1>Endereço</h1>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-11">
+                    <label for="cep" class="label">*CEP</label>
+                    <input type="text" class="form-control" id="cep" name="cep" maxlength="8" required>
+                    <div class="invalid-feedback">
+                        Por favor, insira um CEP para buscar
+                    </div>
+                </div>
+
+                <div class="form-group col-md-1">
+                    <button type="button" class="form-control" onclick="searchCep()"><img
+                            src="../../../Icons/search_FILL0_wght400_GRAD0_opsz24.png" alt="Imagem de Lupa"></button>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="neighborhood" class="label">Bairro</label>
+                    <input type="text" class="form-control" id="neighborhood" name="neighborhood" maxlength="9" disabled>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="state" class="label">Estado</label>
+                    <input type="text" class="form-control" id="state" name="state" disabled>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city" class="label">Cidade</label>
+                    <input type="text" class="form-control" id="city" name="city" maxlength="9" disabled>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="street" class="label">Rua</label>
+                    <input type="text" class="form-control" id="street" name="street" disabled>
+                </div>
+            </div>
+
+            <div class="btn-section">
+                <input type="submit" class="btn-save" value="Próximo">
+            </div>
+        </form>
+    </div>
+
+    <script src="formPg2.js"></script>
+</body>
+</html>

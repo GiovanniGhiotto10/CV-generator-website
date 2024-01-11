@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="result.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="result.js" defer></script>
+    <title id="brand">Resumo do CVV</title>
+  </head>
+
+  <body onload="start()">
+    <div class="container">
+      <div id="contentToPrint">
+        <table>
+          <tr id="user">
+            <td class="table-left title">
+              <h1 id="name"></h1>
+            </td>
+            <td class="table-mid"></td>
+            <td class="table-right content">
+              <b>Data de nascimento:</b> <span id="birth-date"></span><br />
+              <b>Telefone: </b><span id="phone"></span><br />
+              <b>Email: </b><span id="email"></span><br />
+              <b>Endereço<br /></b><span id="address"></span><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-left title">
+              <h3>Objetivo</h3>
+            </td>
+            <td></td>
+            <td class="table-right title">
+              <h3>Competências</h3>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-left content">
+              <p id="goal"></p>
+            </td>
+            <td></td>
+            <td class="table-right content">
+              <p id="skills"></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-left title">
+              <h3>Formação</h3>
+            </td>
+            <td></td>
+            <td class="table-right"></td>
+          </tr>
+
+          <tr>
+            <td class="table-left content">
+              <p id="education"></p>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td class="table-left title">
+              <h3>Experiências</h3>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-left content">
+              <p id="experiences"></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <button id="btnGenerate" class="btn-success" type="button">
+      Baixar Currículo
+    </button>
+  </body>
+</html>

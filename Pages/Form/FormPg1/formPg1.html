@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="formPg1.css">
+
+    <title id="brand">CVV - Dados Pessoais</title>
+</head>
+
+<body>
+    <div class="card-space">
+        <form id="usuarioForms" class="card-content needs-validation">
+            <div class="titulo">
+                <h1>Dados Pessoais</h1>
+            </div>
+
+            <div class="form-group">
+                <label for="userName" class="label">*Nome completo</label>
+                <input type="text" class="form-control" id="userName" name="userName" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o seu nome completo
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="tel" class="label">*Telefone</label>
+                    <input type="tel" class="form-control" id="tel" name="tel" maxlength="11" required>
+                    <div class="invalid-feedback">
+                        Por favor, informe o número de telefone
+                    </div>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="birthDate" class="label">*Data de nascimento</label>
+                    <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+                    <div class="invalid-feedback">
+                        Por favor, informe a data de nascimento
+                    </div>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="gender" class="label">*Sexo</label>
+                    <select id="gender" name="gender" class="form-control" required>
+                        <option value="" selected>Selecione...</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, informe o seu sexo
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="label">*Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o seu email
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="objetivo" class="label">Seu Objetivo</label>
+                <textarea class="form-control" id="objetivo" name="objetivo" rows="3"></textarea>
+            </div>
+
+            <div class="btn-section">
+                <input type="submit" class="btn-save" value="Próximo">
+            </div>
+        </form>
+    </div>
+
+    <script src="formPg1.js"></script>
+</body>
+</html>

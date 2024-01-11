@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    padding: 2%;
+    background-color: var(--background);
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container {
+    height: 80%;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background-color: #efefef;
+}
+
+#contentToPrint{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    height: auto;
+    width: auto;
+}
+
+table{
+    width: 100%;
+}
+
+.table-left{
+    width: 68%;
+}
+
+.table-mid{
+    width: 5%;
+}
+
+.table-right{
+    width: 27%;
+}
+
+.title{
+    color: #2079C7;
+}
+
+.content{
+    color: black;
+}
+
+#btnGenerate{
+    margin: 2%;
+}
+
+#user{
+    height: 200px;
+}

@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    color: var(--text1);
+    background-color: var(--background);
+    align-items: center;
+    justify-content: center;
+}
+
+.card-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 60%;
+    height: auto;
+    padding: 2% 10% 0 10%;
+    border-radius: 16px;
+    background: #678aab;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.description {
+    height: 35%;
+}
+
+.button-icon {
+    height: 30%;
+    width: 30%;
+    margin-bottom: 2rem;
+    margin-left: 35%;
+    border-width: 2px;
+    border-radius: 16px;
+}
+
+.card-content {
+    width: 100%;
+}
+
+th {
+    background-color: gray;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.btn-section {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.btn-save {
+    margin: 1% 0 2% auto;
+}
+
+.btn-delete {
+    height: 30px;
+    width: 50px;
+
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: var(--btn-text1);
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: var(--btn-delete-2);
+    background-color: var(--btn-delete-1);
+    transition: 0.3s;
+}
+
+.btn-delete:hover {
+    height: 30px;
+    width: 50px;
+
+    color: var(--btn-delete-text2);
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: var(--btn-delete-1);
+    background-color: var(--btn-delete-2);
+}
