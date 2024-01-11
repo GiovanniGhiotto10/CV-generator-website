@@ -1,0 +1,59 @@
+:root {
+  --background: #094379;
+  --background-input: #c6d1dc;
+
+  --card-background: #678aab;
+
+  --text1: #000000;
+  --text2: #021d7e;
+
+  --btn-1: #c6d1dc;
+  --btn-2: #094379;
+  --btn-text1: #094379;
+  --btn-text2: #c6d1dc;
+
+  --btn-delete-1: #e08c8c;
+  --btn-delete-2: #a02121;
+  --btn-delete-text1: #a02121;
+  --btn-delete-text2: #e08c8c;
+
+  .titulo {
+    text-align: center;
+    font-size: 20px;
+    color: var(--text2);
+  }
+
+  .input {
+    background-color: var(--background-input);
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .label {
+    color: var(--text2);
+  }
+
+  .btn-save {
+    height: 50px;
+    width: 100px;
+
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+
+    color: var(--btn-text1);
+    border: 2px solid;
+    border-radius: 16px;
+    border-color: var(--btn-2);
+    background-color: var(--btn-1);
+    transition: 0.3s;
+  }
+
+  .btn-save:hover {
+    height: 50px;
+    width: 100px;
+
+    color: var(--btn-text2);
+    border: 2px solid;
+    border-radius: 16px;
+    border-color: var(--btn-1);
+    background-color: var(--btn-2);
+  }
+}
